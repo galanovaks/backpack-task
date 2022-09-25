@@ -15,10 +15,9 @@ int main()
         f=fopen(files[11],"r");
         fscanf(f,"%d %d",&n,&K);
         list=create_list(n,K,f);
-        printf("%s-",files[11]);
+//        printf("%s-",files[11]);
         fclose(f);
-//        solution(g,v);
-        output_list(n,list);
+        solution(list,n,K);
 //        printf("\n");
 //    }
     return 0;
