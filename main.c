@@ -10,15 +10,14 @@ int main()
     "ks_1000_0","ks_100_1","ks_19_0","ks_200_1","ks_300_0","ks_40_0",
     "ks_45_0","ks_500_0","ks_60_0"};
     FILE *f;
-//    for(j=0;j<18;j++)
-//    {
-        f=fopen(files[11],"r");
+    for(j=0;j<18;j++)
+    {
+        f=fopen(files[j],"r");
         fscanf(f,"%d %d",&n,&K);
         list=create_list(n,K,f);
-//        printf("%s-",files[11]);
+        printf("%s-",files[j]);
         fclose(f);
         solution(list,n,K);
-//        printf("\n");
-//    }
+    }
     return 0;
 }
